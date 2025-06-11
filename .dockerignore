@@ -1,0 +1,36 @@
+# === Python-specific ignores ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.pytest_cache/
+venv/
+env/
+.venv/
+.env
+
+# === Sensitive files ===
+credentials.json
+token.pickle
+*.jpg  # Exclude images if not needed in container
+
+# === System/IDE files ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# === Version control ===
+.git/
+.gitignore
+
+# === Local development files ===
+docker-composeyml  # Note: You might want to rename this to 'docker-compose.yml'
+_dockerignore       # Your typo'd files
+chroma/             # Exclude if this is local DB/data
+
+# === Logs/temp ===
+*.log
+*.tmp
