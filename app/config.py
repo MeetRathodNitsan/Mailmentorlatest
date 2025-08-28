@@ -1,5 +1,8 @@
-DATABASE_URL = "postgresql://postgres:admin@localhost:5432/mailmentor"
-OPENAI_API_KEY = "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"
+import os
+
+DATABASE_URL="postgresql://postgres:secret@localhost:5433/postgres"
+print("Using DB URL:", os.getenv("DATABASE_URL"))
+OPENAI_API_KEY = "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"
 OPENAI_API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 # Add or update these settings
 USE_OPENAI_API = False  # Set to False to use local models
